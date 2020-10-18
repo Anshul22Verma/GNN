@@ -28,7 +28,7 @@ class GCN_v1(nn.Module):
         if not (self.task == 'node' or self.task == 'graph'):
             raise RuntimeError('Unknown task.')
 
-        self.dropout = 0.25
+        self.dropout = 0.1
         self.num_layers = 3 #--> we can vary this to change the hops of message passing
     def build_conv_model(self, input_dim, hidden_dim):
         # refer to pytorch geometric nn module for different implementation of GNNs.
@@ -72,7 +72,6 @@ class GCN_v1(nn.Module):
     def loss(self, pred, label):
         # negative log-likelihood after log-softmax 1-hot distribution of the class
         return F.nll_loss(pred, label)
-
 
 '''
  We can use a custom convolution instead of using a standard variation 
@@ -136,7 +135,7 @@ def train(dataset, task, writer):
 
     # build model
     model = GCN_v1(max(dataset.num_node_features, 1), 32, dataset.num_classes, task=task)
-    opt = optim.Adam(model.parameters(), lr=0.01)
+    opt = optim.Adam(model.parameters(), lr=0.001)
 
     # train
     for epoch in range(200):
