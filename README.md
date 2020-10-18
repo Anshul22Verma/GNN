@@ -7,7 +7,7 @@ A colaborative work of :
 1. Ashish, ashish.tiwari@iitgn.ac.in
 1. Prajwal, singh_prajwal@iitgn.ac.in 
 
-Revision 1.01, 16 October 2020
+Revision 1.02, 16 October 2020
 
 ## Setup 
 
@@ -62,3 +62,10 @@ conda activate shanmuga_iitg
 #### Jupyter Notebook 
 
 #### Spyder
+
+
+## Setup to use the repo in google-colab 
+to be added
+
+## Setup to use the repo in an EC2 instance
+to be added
