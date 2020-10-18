@@ -9,6 +9,8 @@ import torch_geometric.utils as pyg_utils
 import torch_geometric.transforms as T
 from torch_geometric.data import DataLoader
 
+revision = 1.01
+
 class GCN_v1(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, task='node'):
         super(GCN_v1, self).__init__()
