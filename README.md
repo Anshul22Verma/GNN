@@ -2,10 +2,10 @@
 graph neural network
 
 A colaborative work of :
-1. Aalok
-1. Anshul
-1. Ashish 
-1. Prajwal
+1. Aalok,  aalok@iitgn.ac.in
+1. Anshul, av.vermaans@gmail.com
+1. Ashish, ashish.tiwari@iitgn.ac.in
+1. Prajwal, singh_prajwal@iitgn.ac.in 
 
 Revision 1.01, 16 October 2020
 
